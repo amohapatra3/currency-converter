@@ -74,9 +74,9 @@ function Form() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label> Amount</label>
+        <label> Amount to convert </label>
         <input type="text" value={values.amount} onChange={setAmount}></input>
-        <label> From </label>
+        <label> Currency to convert from </label>
         <select
           name="changeFrom"
           value={values.changeFrom}
@@ -90,7 +90,7 @@ function Form() {
           </option>
           {countryList}
         </select>
-        <label> To </label>
+        <label> Currency to convert to </label>
         <select
           name="changeTo"
           value={values.changeTo}
@@ -103,7 +103,7 @@ function Form() {
           </option>
           {countryList}
         </select>
-        <button> Convert</button>
+        <button className="convertButton"> Convert</button>
       </form>
       <Conversion
         changeFrom={values.changeFrom}

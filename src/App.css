@@ -12,3 +12,15 @@ form {
   flex-direction: column;
   max-width: 60%;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 1em;
+}
+.convertButton {
+  display: flex;
+}
