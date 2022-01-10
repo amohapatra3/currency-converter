@@ -7,11 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <Instructions />
-      <div className="center">
-        {" "}
-        <Form />{" "}
-      </div>
+      <Instructions /> <Form />{" "}
     </>
   );
 }

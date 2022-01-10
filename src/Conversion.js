@@ -2,7 +2,7 @@ import React from "react";
 
 function Conversion(props) {
   return props.submit ? (
-    <h1>
+    <h1 className="converted">
       {" "}
       {props.changeFrom +
         " " +

@@ -8,19 +8,21 @@
 
 form {
   display: flex;
-  border: 2px solid red;
   flex-direction: column;
+  height: 40%;
   max-width: 60%;
 }
 
 .center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 input {
   padding: 1em;
 }
+
 .convertButton {
   display: flex;
 }

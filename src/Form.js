@@ -72,7 +72,7 @@ function Form() {
   }
 
   return (
-    <>
+    <div className="center">
       <form onSubmit={handleSubmit}>
         <label> Amount to convert </label>
         <input type="text" value={values.amount} onChange={setAmount}></input>
@@ -112,7 +112,7 @@ function Form() {
         submit={submit}
         convertedAmount={convertedAmount}
       />
-    </>
+    </div>
   );
 }
 
