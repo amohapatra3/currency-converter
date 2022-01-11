@@ -6,8 +6,8 @@ function Instructions() {
       <h2>Instructions for using this currency converter:</h2>
       <p>
         To use this currency converter, please enter the amount in the currency
-        three you wish to convert from. Then from the dropdown menus, please
-        select the{" "}
+        you wish to convert from. Then from the dropdown menus, please select
+        the{" "}
         <a href="https://www.exchangerate-api.com/docs/supported-currencies">
           three letter currency code
         </a>
