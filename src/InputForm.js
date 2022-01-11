@@ -79,6 +79,7 @@ function InputForm() {
         <Form.Group>
           <Form.Text> Amount to convert: </Form.Text>
           <Form.Control
+            required
             type="text"
             value={values.amount}
             onChange={setAmount}
@@ -120,6 +121,7 @@ function InputForm() {
           Convert
         </Button>
       </Form>
+      <br />
       <Conversion
         changeFrom={values.changeFrom}
         amount={values.amount}

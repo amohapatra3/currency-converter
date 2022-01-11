@@ -1,8 +1,8 @@
 import React from "react";
-
+import Alert from "react-bootstrap/Alert";
 function Conversion(props) {
   return props.submit ? (
-    <h1 className="converted">
+    <Alert className="converted">
       {" "}
       {props.changeFrom +
         " " +
@@ -11,7 +11,7 @@ function Conversion(props) {
         props.changeTo +
         " " +
         props.convertedAmount}
-    </h1>
+    </Alert>
   ) : null;
 }
 

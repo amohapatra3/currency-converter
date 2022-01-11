@@ -7,8 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <Header />
-      <Instructions /> <InputForm />{" "}
+      <Header className="font" />
+      <Instructions className="font" /> <InputForm />{" "}
     </>
   );
 }
