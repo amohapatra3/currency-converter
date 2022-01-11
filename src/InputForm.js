@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Form } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import axios from "axios";
 import Conversion from "./Conversion";
 const API_KEY = "f08725edef39eafa2ef31749";
@@ -76,7 +76,7 @@ function InputForm() {
   return (
     <div className="center">
       <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3">
+        <Form.Group>
           <Form.Text> Amount to convert: </Form.Text>
           <Form.Control
             type="text"
@@ -115,7 +115,10 @@ function InputForm() {
             {countryList}
           </Form.Select>
         </Form.Group>
-        <Button variant="outline-primary">Convert</Button>
+        <br />
+        <Button variant="outline-primary" type="submit">
+          Convert
+        </Button>
       </Form>
       <Conversion
         changeFrom={values.changeFrom}
